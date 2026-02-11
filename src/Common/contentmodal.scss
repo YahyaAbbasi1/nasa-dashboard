@@ -1,0 +1,115 @@
+.ant-modal-root .ant-modal-centered .ant-modal {
+  border-radius: 24px !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  // background: #ffffff;
+  
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.ant-modal-zoom-enter,
+.ant-modal-zoom-leave {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.ant-modal-zoom-enter-active,
+.ant-modal-zoom-leave-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ant-modal-title {
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  // color: #2c3e50 !important;
+  text-align: center;
+  // border-bottom: 2px solid #e0e0e0;
+  padding: 0.5rem 0.5rem;
+}
+
+.custom-modal .ant-modal-body {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  font-weight: 400;
+  // color: #555;
+  line-height: 1.8;
+  transition: background-color 0.3s ease;
+  border-radius: 24px; // Fully rounded body corners
+}
+
+.ant-input:focus,
+.ant-select-selector:focus {
+  // box-shadow: 0 0 12px rgba(0, 123, 255, 0.8);
+  // border-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+// .modal-open .ant-modal-wrap {
+//   backdrop-filter: blur(12px);
+// }
+
+// .custom-modal-light {
+//   background-color: #ffffff;
+//   color: #333;
+// }
+
+// .custom-modal-dark {
+//   background-color: #2c3e50;
+//   color: #ecf0f1;
+// }
+
+.ant-modal .ant-modal-close {
+  font-size: 24px !important;
+
+  opacity: 0.7 !important;
+  transition: color 0.3s ease, opacity 0.3s ease !important;
+   background: none !important;
+  box-shadow: none !important;
+
+  // &:hover {
+  //   color: #007bff !important;
+  //   opacity: 1 !important;
+  //   background: none !important;
+  //   box-shadow: none !important;
+  // }
+
+  &:focus {
+    outline: none !important;
+  }
+}
+.ant-form-item .ant-form-item-label > label {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  // color: #2c3e50 !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0.2px !important;
+  margin-bottom: 10px !important;
+  display: block !important;
+  text-transform: none !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+.input-form-submit-button {
+  width: 100% !important; // Set width to 100% to fill the available space
+
+  // background: linear-gradient(135deg, #007bff, #00c6ff) !important;
+  // color: #fff !important;
+  padding: 12px 30px !important;
+  border-radius: 50px !important;
+  border: none !important;
+  font-size: 14px !important;
+  margin-left: 6px !important;
+  cursor: pointer !important;
+  transition: background 0.3s ease, transform 0.2s ease !important;
+  margin: 0 auto !important; // Center the button horizontally
+
+  &:hover {
+    // background: linear-gradient(135deg, #5dbeee, #45a6ef) !important;
+    transform: scale(1.05) !important;
+  }
+
+  &:focus {
+    outline: none !important;
+  }
+}

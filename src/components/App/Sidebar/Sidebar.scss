@@ -1,0 +1,54 @@
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 0.5rem;
+
+  .user-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+
+    @media (max-width: 48rem) {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+.ant-pro-sider-collapsed .sidebar-header .user-name {
+  display: none;
+}
+/* Removes default hardcoded colors from AntD Layouts */
+.ant-layout,
+.ant-layout-header,
+.ant-layout-content,
+.ant-layout-footer,
+.ant-layout-sider {
+  background: transparent !important;
+  color: inherit !important;
+}/* Sidebar styles */
+.sidebar {
+  background: #f0f2f5 !important; /* Match this with your Sider's background */
+}
+
+/* Menu item styles */
+.ant-menu-item {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.ant-menu-item:hover {
+  background: #e6f7ff !important; /* Hover color */
+  color: #1890ff !important;
+}
+
+.ant-menu-item-selected {
+  background: #e6f7ff !important; 
+  color: #1890ff !important;
+  font-weight: 500;
+}
+
+/* Remove default borders */
+.ant-menu {
+  border-right: none !important;
+}

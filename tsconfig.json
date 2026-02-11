@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "target": "ES6",
+    "lib": ["dom", "esnext"],
+    "allowJs": true,
+
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+
+    "paths": {
+      "assets/*": ["assets/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
+
+// {
+//   "compilerOptions": {
+//     "jsx": "preserve",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "target": "ES6",
+//     "module": "ESNext",
+//     "moduleResolution": "node",
+//     "lib": ["DOM", "ESNext"],
+//     "skipLibCheck": true,
+//     "forceConsistentCasingInFileNames": true
+//   },
+//   "include": ["src"],
+//   "exclude": ["node_modules"]
+// }
