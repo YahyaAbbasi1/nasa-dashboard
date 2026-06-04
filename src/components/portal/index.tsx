@@ -8,6 +8,7 @@ import Dashboard from "./Dashboard";
 import NEO_Upcoming from "./NEOUpcoming";
 import NEO_Historical from "./NEO_Historical";
 import NEO_Detail from "./NEO_Detail";
+import AIAssistant from "./AIAssistant";
 
 
 const Inventory: React.FC = () => {
@@ -21,6 +22,8 @@ const Inventory: React.FC = () => {
                <Route path="neo-upcoming/*" element={<NEO_Upcoming />} />
                       <Route path="neo-historical/*" element={<NEO_Historical />} />
                        <Route path="neo-detail/:id" element={<NEO_Detail />} />
+                           {/* <Route path="ai-assistant/*" element={<AIAssistant />} /> */}
+                         
         </Routes>
       </PageContextProvider>
     </div>

@@ -3,7 +3,7 @@ import {
   DashboardOutlined, 
     RocketOutlined,
   HistoryOutlined,
-  ProfileOutlined
+RobotOutlined
 } from "@ant-design/icons";
 import { BASE_PATH } from "Constants/Constants";
 
@@ -34,7 +34,13 @@ const sections = [
     icon: <UserOutlined  />,
     url: `${BASE_PATH}/users`,
   },
-
+  
+  // {
+  //   label: "AI Assistant",
+  //   key: "ai-assistant",
+  //   icon: <RobotOutlined />,
+  //   url: `${BASE_PATH}/ai-assistant`,
+  // },
  
 ];
 

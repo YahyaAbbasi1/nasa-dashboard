@@ -1,5 +1,7 @@
 import "./App.scss";
 import React, { useEffect, useState } from "react";
+
+import AIAssistant from "components/portal/AIAssistant";
 import { Button, Layout, ConfigProvider, theme as antdTheme } from "antd";
 import {
   MenuUnfoldOutlined,
@@ -83,6 +85,7 @@ const App: React.FC = () => {
   ].filter((a): a is typeof antdTheme.defaultAlgorithm => Boolean(a));
 
   return (
+   
     <ConfigProvider
       locale={enUS}
       theme={{
@@ -233,6 +236,7 @@ const App: React.FC = () => {
         </div>
       </Draggable>
           <SettingsDrawer open={settingsOpen} onClose={() => setSettingsOpen(false)} />
+            <AIAssistant />
         </ProLayout>
       ) : (
        <Content>
@@ -243,7 +247,9 @@ const App: React.FC = () => {
   </Routes>
 </Content>
       )}
+    
     </ConfigProvider>
+  
   );
 };
 

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://YahyaAbbasi1.github.io/nasa-dashboard",
   "dependencies": {
+    "@ant-design/pro-chat": "^1.15.3",
     "@ant-design/pro-components": "^2.8.10",
     "@ant-design/pro-layout": "^7.22.7",
     "@ant-design/pro-table": "^3.18.2",
