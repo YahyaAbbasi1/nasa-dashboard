@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { FloatButton, theme as antdTheme } from "antd";
+import { FloatButton } from "antd";
 import { RobotOutlined, CloseOutlined } from "@ant-design/icons";
-
 import { ProChat } from "@ant-design/pro-chat";
+import { theme as antdTheme } from "antd";
+import { useThemeStore } from "store/themeStore";
 
 const AIAssistant: React.FC = () => {
   const [open, setOpen] = useState(false);
   const { token } = antdTheme.useToken();
+  const { mode } = useThemeStore();
 
   return (
     <>
@@ -34,12 +36,12 @@ const AIAssistant: React.FC = () => {
             overflow: "hidden",
           }}
         >
-   <ProChat
-  locale="en-US"
-  request={async (messages) => {
-    return new Response("Hello! How can I help you?");
-  }}
-/>
+          <ProChat
+            locale="en-US"
+            request={async (messages) => {
+              return new Response("Hello! How can I help you?");
+            }}
+          />
         </div>
       )}
     </>

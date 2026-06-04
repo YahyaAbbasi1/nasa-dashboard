@@ -8,6 +8,7 @@
     "@ant-design/pro-components": "^2.8.10",
     "@ant-design/pro-layout": "^7.22.7",
     "@ant-design/pro-table": "^3.18.2",
+    "@ant-design/x": "^2.7.0",
     "@reduxjs/toolkit": "^2.5.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
