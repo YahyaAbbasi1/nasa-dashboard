@@ -317,3 +317,359 @@ $light-gray: #e9ecef;
 .ant-alert-info .ant-alert-icon {
   color: var(--ant-color-primary) !important;
 }
+
+
+
+// // ─── Liquid Glass — iOS 26 Design Language ───────────────────────
+// // Core palette
+// $primary:       #eeedf2;
+// $primary-light: #bfc0c3;
+// $dark:          rgba(225, 224, 229, 0.92);
+// $gray:          rgba(235, 233, 239, 0.45);
+// $light-gray:    rgba(237, 235, 243, 0.2);
+// $white:         #ffffff;
+
+// // ─── Mixins ───────────────────────────────────────────────────────
+
+// // Ambient gradient backdrop (put this on .login-container)
+// @mixin liquid-scene-bg {
+//   background: linear-gradient(135deg,
+//     #dad9db 0%,
+//     #c7c8c9 40%,
+//     #d0d1d3 60%,
+//     #a4a5a5 100%
+//   );
+// }
+
+// // The glass card border gradient wrap
+// @mixin liquid-glass-border {
+//   background: linear-gradient(135deg,
+//     rgba(255,255,255,0.75) 0%,
+//     rgba(200,220,255,0.35) 30%,
+//     rgba(255,255,255,0.12) 60%,
+//     rgba(255,255,255,0.55) 100%
+//   );
+//   padding: 2px; // this IS the border
+//   border-radius: 28px;
+// }
+
+// // The frosted glass surface
+// @mixin liquid-glass-surface {
+//   background:         rgba(255, 255, 255, 0.18);
+//   backdrop-filter:    blur(48px) saturate(180%);
+//   -webkit-backdrop-filter: blur(48px) saturate(180%);
+//   border:             1px solid rgba(255, 255, 255, 0.45);
+//   border-radius:      27px;
+
+//   // Inset rim lights — top highlight + side edge glows
+//   box-shadow:
+//     0  2px 0  0 rgba(255,255,255,0.60) inset,   // top rim light
+//     0 -1px 0  0 rgba(255,255,255,0.15) inset,   // bottom inner
+//     1px 0  0  0 rgba(255,255,255,0.35) inset,   // left rim
+//    -1px 0  0  0 rgba(255,255,255,0.35) inset,   // right rim
+//     0 32px 64px rgba(100,  80, 200, 0.22),       // deep colour shadow
+//     0  8px 24px rgba( 80, 120, 220, 0.15),       // mid shadow
+//     0  2px  4px rgba(255, 255, 255, 0.08);       // surface glow
+
+//   // Specular highlight layer (top-left catch light)
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     inset: 0;
+//     border-radius: inherit;
+//     background: linear-gradient(
+//       128deg,
+//       rgba(255,255,255,0.55)  0%,
+//       rgba(255,255,255,0.08) 25%,
+//       rgba(180,210,255,0.05) 50%,
+//       rgba(255,255,255,0.00) 60%,
+//       rgba(255,255,255,0.12) 100%
+//     );
+//     pointer-events: none;
+//     z-index: 1;
+//   }
+
+//   // Iridescent edge refraction (conic spectrum)
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     inset: 0;
+//     border-radius: inherit;
+//     background: conic-gradient(
+//       from 200deg at 20% 10%,
+//       rgba(168, 85,247,0.08),
+//       rgba( 59,130,246,0.06),
+//       rgba( 16,185,129,0.04),
+//       rgba(245,158, 11,0.03),
+//       rgba(239, 68, 68,0.04),
+//       rgba(168, 85,247,0.06),
+//       transparent 60%
+//     );
+//     pointer-events: none;
+//     z-index: 2;
+//   }
+// }
+
+// // Glass input field
+// @mixin liquid-input {
+//   background:   rgba(255, 255, 255, 0.28);
+//   border:       1px solid rgba(255, 255, 255, 0.55);
+//   border-radius: 14px;
+//   box-shadow:
+//     0 1px 0 rgba(255,255,255,0.6) inset,
+//     0 2px 8px rgba(100, 80, 180, 0.08);
+
+//   &:focus-within {
+//     background:  rgba(255, 255, 255, 0.42);
+//     border-color: rgba(217, 216, 222, 0.55);
+//     box-shadow:
+//       0 0 0 3px rgba(199, 198, 200, 0.14),
+//       0 1px 0 rgba(255,255,255,0.7) inset;
+//   }
+// }
+
+// // Glass primary button
+// @mixin liquid-button {
+//   background: linear-gradient(135deg,
+//     rgba(203, 203, 205, 0.82) 0%,
+//     rgba(216, 216, 217, 0.82) 100%
+//   );
+//   border: 1px solid rgba(255,255,255,0.30);
+//   border-radius: 14px;
+//   backdrop-filter: blur(8px);
+//   -webkit-backdrop-filter: blur(8px);
+//   color: $white;
+//   font-weight: 600;
+
+//   box-shadow:
+//     0 1px 0 rgba(255,255,255,0.35) inset,
+//     0 8px 20px rgba(182, 182, 184, 0.35),
+//     0 2px  4px rgba(221, 221, 222, 0.2);
+
+//   transition: all 0.2s;
+
+//   &:hover {
+//     transform: translateY(-1px);
+//     box-shadow:
+//       0  1px 0 rgba(255,255,255,0.4) inset,
+//       0 12px 28px rgba(207, 206, 208, 0.45),
+//       0  4px  8px rgba(206, 205, 207, 0.25);
+//   }
+//   &:active { transform: translateY(0); opacity: 0.9; }
+// }
+
+// // Glass social button
+// @mixin liquid-social-btn {
+//   background: rgba(255, 255, 255, 0.35);
+//   border:     1px solid rgba(255, 255, 255, 0.60);
+//   border-radius: 50%;
+//   backdrop-filter: blur(12px);
+//   -webkit-backdrop-filter: blur(12px);
+//   box-shadow:
+//     0 1px 0 rgba(255,255,255,0.7) inset,
+//     0 3px 10px rgba(170, 169, 172, 0.12);
+//   transition: all 0.2s;
+
+//   &:hover {
+//     background: rgba(255,255,255,0.55);
+//     transform: translateY(-2px);
+//     box-shadow:
+//       0 1px 0 rgba(255,255,255,0.8) inset,
+//       0 6px 16px rgba(191, 191, 194, 0.2);
+//   }
+// }
+
+// // ─── Decorative blobs (replace old ::before / ::after circles) ────
+// @mixin liquid-blob($size, $gradient, $top: auto, $left: auto, $bottom: auto, $right: auto) {
+//   position: absolute;
+//   width: $size;
+//   height: $size;
+//   border-radius: 50%;
+//   background: $gradient;
+//   filter: blur(60px);
+//   opacity: 0.55;
+//   top: $top; left: $left; bottom: $bottom; right: $right;
+// }
+
+// // ─── Component Styles ─────────────────────────────────────────────
+
+// .login-container {
+//   @include liquid-scene-bg;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+//   padding: 2rem;
+//   position: relative;
+//   overflow: hidden;
+
+//   // Coloured ambient blobs replacing old geometric ::before / ::after
+//   &::before {
+//     @include liquid-blob(280px,
+//       radial-gradient(circle, #d4d2d6, #b1b1b6),
+//       $top: -60px, $left: -60px
+//     );
+//     content: '';
+//   }
+//   &::after {
+//     @include liquid-blob(220px,
+//       radial-gradient(circle, #d5d8d8, #bebebf),
+//       $bottom: -40px, $right: -40px
+//     );
+//     content: '';
+//   }
+//   .decoration-circle {
+//     @include liquid-blob(160px,
+//       radial-gradient(circle, #cccacb, #c8c5c7),
+//       $top: 40%, $left: 20%
+//     );
+//   }
+
+//   @media (max-width: 768px) {
+//     padding: 1.5rem;
+//     &::before { width: 200px; height: 200px }
+//     &::after  { width: 160px; height: 160px }
+//   }
+//   @media (max-width: 480px) {
+//     padding: 1rem;
+//     &::before, &::after { display: none }
+//   }
+// }
+
+// .login-glass-card {
+//   @include liquid-glass-border;
+//   width: 100%;
+//   max-width: 380px;
+//   z-index: 10;
+//   position: relative;
+
+//   .login-glass-card-inner {
+//     @include liquid-glass-surface;
+//     padding: 2rem 1.75rem 1.75rem;
+//     position: relative;
+//   }
+// }
+
+// // ─── Header ───────────────────────────────────────────────────────
+// .login-header {
+//   text-align: center;
+//   margin-bottom: 1.5rem;
+
+//   .logo-wrapper {
+//     width: 58px; height: 58px;
+//     margin: 0 auto 0.75rem;
+//     border-radius: 50%;
+//     background: rgba(255,255,255,0.50);
+//     border: 1px solid rgba(255,255,255,0.70);
+//     box-shadow:
+//       0 1px 0 rgba(255,255,255,0.80) inset,
+//       0 3px 12px rgba(202, 202, 204, 0.2);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     .app-logo { width: 55%; height: auto }
+//   }
+
+//   .welcome-text {
+//     font-size: 1.3rem; font-weight: 600;
+//     color: rgba(30,20,60,0.92);
+//     letter-spacing: -0.02em;
+//     margin-bottom: 3px;
+//   }
+//   .subtitle-text {
+//     font-size: 0.8rem;
+//     color: rgba(20, 20, 20, 0.55);
+//   }
+// }
+
+// // ─── Form ─────────────────────────────────────────────────────────
+// .auth-form {
+//   .modern-input {
+//     @include liquid-input;
+//     display: flex;
+//     align-items: center;
+//     padding: 0 0.85rem;
+//     margin-bottom: 0.75rem;
+
+//     .input-icon { color: $dark; margin-right: 8px; font-size: 15px }
+
+//     input {
+//       flex: 1; border: none; background: transparent; outline: none;
+//       padding: 0.6rem 0;
+//       font-size: 0.875rem; color: $dark;
+//       &::placeholder { color: rgba(80,60,140,0.38) }
+//     }
+//   }
+
+//   .forgot-password {
+//     text-align: right;
+//     margin-bottom: 1rem;
+
+//     .forgot-text {
+//       font-size: 0.75rem;
+//       color: rgba(90,60,200,0.70);
+//       font-weight: 500;
+//       cursor: pointer;
+//       &:hover { color: rgba(90,60,200,1); text-decoration: underline }
+//     }
+//   }
+
+//   .primary-auth-btn {
+//     @include liquid-button;
+//     width: 100%;
+//     height: 42px;
+//     font-size: 0.9rem;
+//     margin-bottom: 1rem;
+//   }
+
+//   .divider {
+//     display: flex;
+//     align-items: center;
+//     gap: 10px;
+//     margin: 0 0 1rem;
+//     font-size: 0.75rem;
+//     color: rgba(80,60,140,0.4);
+
+//     &::before, &::after {
+//       content: '';
+//       flex: 1;
+//       height: 1px;
+//       background: $light-gray;
+//     }
+//   }
+
+//   .social-auth {
+//     display: flex;
+//     justify-content: center;
+//     gap: 12px;
+//     margin-bottom: 1.25rem;
+
+//     .social-btn {
+//       @include liquid-social-btn;
+//       width: 42px; height: 42px;
+//       display: flex; align-items: center; justify-content: center;
+//       font-size: 16px;
+//       &.google   { color: #DB4437 }
+//       &.facebook { color: #4267B2 }
+//     }
+//   }
+
+//   .auth-footer {
+//     text-align: center;
+//     font-size: 0.8rem;
+//     color: rgba(60,50,100,0.50);
+
+//     .signup-text {
+//       color: rgba(100,70,220,0.80);
+//       font-weight: 500;
+//       cursor: pointer;
+//       &:hover { text-decoration: underline }
+//     }
+//   }
+// }
+
+// // ─── Alert override ───────────────────────────────────────────────
+// .ant-alert-info .ant-alert-icon {
+//   color: var(--ant-color-primary) !important;
+// }
